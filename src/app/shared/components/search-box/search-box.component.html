@@ -1,0 +1,19 @@
+<!-- <div class="InputContainer">
+  <input
+  [placeholder]="placeholder"
+  id="input"
+  class="form-control"
+  name="text"
+  type="text"
+  (keyup.enter)="emitValue( txtInput.value )"
+#txtInput>
+
+</div> -->
+<!-- (keyup.enter)="emitValue( txtInput.value )" -->
+
+<input type="text"
+[placeholder] ="placeholder"
+class="form-control"
+[value]="initialValue"
+(keyup)="onKeyPress(txtInput.value)"
+#txtInput>
